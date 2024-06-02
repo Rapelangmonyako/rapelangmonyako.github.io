@@ -1,0 +1,218 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header.parallax {
+    background-image: url('header-bg.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+}
+
+header .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.intro h1 {
+    font-size: 48px;
+}
+
+.intro h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.intro .btn {
+    padding: 10px 20px;
+    background-color: #ff4a57;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+section:nth-of-type(even) {
+    background-color: #f1f1f1;
+}
+
+section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.services .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services .service {
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.services .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services .service p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.services .service a {
+    text-decoration: none;
+    color: #ff4a57;
+}
+
+.experience .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.experience .stat {
+    flex: 1 1 200px;
+}
+
+.experience .stat h3 {
+    font-size: 36px;
+}
+
+excellence .stat p {
+    font-size: 16px;
+}
+
+.projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.projects .project {
+    position: relative;
+    flex: 1 1 calc(33.333% - 20px);
+    overflow: hidden;
+}
+
+.projects .project img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.projects .project:hover img {
+    transform: scale(1.1);
+}
+
+.projects .project h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.animations .video-placeholder {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.brands .brand-logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.brands .brand-logos img {
+    max-height: 100px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact .btn {
+    padding: 10px 20px;
+    background-color: #ff4a57;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
